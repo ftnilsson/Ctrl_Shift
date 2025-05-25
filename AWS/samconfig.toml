@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "ctrl-shift-frontend"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-xxxx" # You'll need to replace this with your actual S3 bucket for SAM deployments
+s3_prefix = "ctrl-shift-frontend"
+region = "us-east-1" # Change this to your preferred AWS region
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
