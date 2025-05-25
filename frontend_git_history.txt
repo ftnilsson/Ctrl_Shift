@@ -1,0 +1,17 @@
+c2856bb Add Support Superhero page with core principles and best practices for support excellence
+fb90474 feat(landing-page): implement dynamic content fetching and loading states for improved user experience
+c9d9d6e fix(landing-page): correct HTML entity for apostrophe in Get Started section
+324c7bc feat(landing-page): redesign LandingPage with dynamic theming and enhanced UI elements
+b72abdf feat(theme): enhance theming support in TeamsPage, TeamCard, and TeamMemberCard components
+7465203 more themes updates
+e8a6a6b feat(shifts): enhance ShiftsPage with dynamic theming for improved UI consistency
+0ba8356 feat(theme): implement dynamic theming across layout, dashboard, reports, and teams pages
+3c2e447 feat(reports): add ReportsPage and TeamSupportMetrics components with mock API integration
+3b30be3 feat(dashboard): implement coverage warnings and stats overview in DashboardPage feat(api): add mock coverage data and analysis service for coverage gaps fix(footer): update footer links for team and GitHub repository
+cee4e48 feat(teams): add modals and components for team and member management
+2dd2b0f theme toggle
+310a2ba tweaks to remove errors
+0f8f443 add shifts module
+88f9854 custome calendar control
+9cf57f8 feat: Implement on-call shift management with calendar integration
+3fd313f Initial commit from Create Next App
