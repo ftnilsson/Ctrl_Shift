@@ -1,0 +1,244 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modalContainer {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 28rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+:global(.dark) .modalContainer {
+  background-color: #1f2937;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.modalTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+:global(.dark) .modalTitle {
+  color: #f3f4f6;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #4b5563;
+}
+
+:global(.dark) .formLabel {
+  color: #d1d5db;
+}
+
+.formInput {
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #374151;
+  background-color: white;
+}
+
+:global(.dark) .formInput {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #f3f4f6;
+}
+
+textarea.formInput {
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #374151;
+}
+
+:global(.dark) textarea.formInput {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #f3f4f6;
+}
+
+/* Enhanced styling for select dropdown inputs */
+select.formInput {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%234b5563' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  padding-right: 2.5rem;
+  color: #374151;
+  background-color: #f9fafb;
+}
+
+:global(.dark) select.formInput {
+  background-color: #374151;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23d1d5db' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  color: #f3f4f6;
+  border-color: #4b5563;
+}
+
+select.formInput:focus {
+  background-color: white;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+:global(.dark) select.formInput:focus {
+  background-color: #374151;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+}
+
+select.formInput option {
+  background-color: white;
+  color: #374151;
+  padding: 8px;
+}
+
+:global(.dark) select.formInput option {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+select.formInput option:hover,
+select.formInput option:focus {
+  background-color: #f3f4f6;
+}
+
+:global(.dark) select.formInput option:hover,
+:global(.dark) select.formInput option:focus {
+  background-color: #374151;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+:global(.dark) .formInput:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.formTextarea {
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  min-height: 6rem;
+  resize: vertical;
+  color: #374151;
+  background-color: white;
+}
+
+:global(.dark) .formTextarea {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #f3f4f6;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.cancelButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  color: #4b5563;
+  background-color: white;
+  font-weight: 500;
+}
+
+:global(.dark) .cancelButton {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #d1d5db;
+}
+
+.cancelButton:hover {
+  background-color: #f3f4f6;
+}
+
+:global(.dark) .cancelButton:hover {
+  background-color: #4b5563;
+}
+
+.saveButton {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: white;
+  background-color: #2563eb;
+  font-weight: 500;
+}
+
+:global(.dark) .saveButton {
+  background-color: #4f46e5;
+}
+
+.saveButton:hover {
+  background-color: #1d4ed8;
+}
+
+:global(.dark) .saveButton:hover {
+  background-color: #4338ca;
+}
+
+.shiftTypePrimary { color: #4338ca; }
+.shiftTypeBackup { color: #8b5cf6; }
+.shiftTypeNight { color: #4f46e5; }
+.shiftTypeWeekend { color: #0ea5e9; }
+.shiftTypeHoliday { color: #ef4444; }
+
+/* For showing a color indicator based on shift type */
+.shiftTypeIndicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.shiftTypeIndicator.primary { background-color: #4338ca; }
+.shiftTypeIndicator.backup { background-color: #8b5cf6; }
+.shiftTypeIndicator.night { background-color: #4f46e5; }
+.shiftTypeIndicator.weekend { background-color: #0ea5e9; }
+.shiftTypeIndicator.holiday { background-color: #ef4444; }

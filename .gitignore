@@ -33,6 +33,8 @@ dist/
 
 # AWS
 .aws-sam/
+packaged.yaml
+samconfig.toml.bak
 
 # IDE
 .idea/
